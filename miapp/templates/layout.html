@@ -22,16 +22,16 @@
     <nav class="nav nav-bar">
         <ul>
             <li>
-                <a href ="{%url 'cursos'%}">Cursos</a>
+                <a href ="{% url 'cursos' %}">Cursos</a>
             </li>
             <li>
-                <a href ="{%url 'carreras'%}">Carreras</a>
+                <a href ="{% url 'carreras' %}">Carreras</a>
             </li>
             <li>
-                <a href ="{%url 'estudiantes'%}">Estudiantes</a>
+                <a href ="{% url 'estudiantes' %}">Estudiantes</a>
             </li>
             <li>
-                <a href ="{%url 'consultas'%}">Consultas</a>
+                <a href ="{% url 'consultas' %}">Consultas</a>
             </li>
         </ul>
         
@@ -47,7 +47,7 @@
                 {% block content %}
             <strong></strong>
             {% endblock %}
-            <img class="fondo" src="{% static 'images/image1.svg' %}" alt="">
+            
             </div>
             
         </div>

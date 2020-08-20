@@ -21,8 +21,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index, name="index"),
     path('cursos/',views.cursos, name="cursos"),
-    path('carreras/',views.carreras, name="carreras"),
+    path('carreras/',views.cursos, name="carreras"),
     path('estudiantes/',views.estudiantes, name="estudiantes"),
     path('consultas/',views.consultas, name="consultas"),
+    path('eliminar_cursos/<int:id>',views.eliminar_cursos, name="eliminar_cursos"),
+    path('crear_cursos/<int:idcurso>/<str:codigo>/<str:nombre>/<str:horas>/<int:creditos>/<str:estado>',views.crear_cursos, name="crear_cursos")
 
 ]
